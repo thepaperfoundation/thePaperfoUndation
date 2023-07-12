@@ -1,0 +1,153 @@
+/* Autosizing command */
+html, body {
+  height: 100%;
+}
+
+/* Styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+    text-align: center 
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Styles for the header */
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ff6600;
+  margin: 0;
+  padding: 20px 0;
+}
+
+h2 {text-align: center;
+  margin-bottom: 1px;
+}
+    
+ul{ display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #ff6600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+    font-size: 11px}
+
+/* Styles for the navigation bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #ff6600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+ul:hover {
+  background-color: #ff9933;
+}
+
+/* Styles for the content */
+p {
+  margin-bottom: 20px;
+}
+
+
+
+/* Stock animation styles */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+
+/*for the footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1px;
+  bottom: 0;
+    position:fixed;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 10px; /* Adjust the minimum height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-links {
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-size: 12px; /* Adjust the font size to your desired small size */
+  text-decoration: none;
+}
+
+.social-media-links a:hover {
+  color: #ff6600;
+}
+
+.footer-content img {
+  width: 30px; /* Adjust the width to your desired size */
+  height: auto; /* Maintain the aspect ratio */
+  background-color: transparent; /* Remove the background */
+  border-radius: 4px; /* Remove the rounded corners */
+}
+
+/* FOOTER TRANSITIONS */
+.social-media-links a {
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-media-links a:hover {
+  transform: scale(1.1);
+}
