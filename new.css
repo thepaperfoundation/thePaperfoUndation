@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
-    text-align: center 
+  text-align: center;
 }
 
 .container {
@@ -25,24 +25,28 @@ header {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 24px;
   color: #ff6600;
   margin: 0;
   padding: 20px 0;
 }
 
-h2 {text-align: center;
+h2 {
+  text-align: center;
   margin-bottom: 1px;
+  font-size: 24px;
 }
-    
-ul{ display: inline-block;
+
+ul {
+  display: inline-block;
   padding: 5px 20px;
   color: #fff;
   background-color: #ff6600;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-    font-size: 11px}
+  font-size: 14px;
+}
 
 /* Styles for the navigation bar */
 nav ul {
@@ -56,26 +60,11 @@ nav ul li {
   margin-right: 10px;
 }
 
-{
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #ff6600;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-ul:hover {
-  background-color: #ff9933;
-}
-
-/* Styles for the content */
+/* Content */
 p {
   margin-bottom: 20px;
+  font-size: 16px;
 }
-
-
 
 /* Stock animation styles */
 @keyframes fade-in {
@@ -91,25 +80,21 @@ p {
   animation: fade-in 1s ease-in-out;
 }
 
-
-/*for the footer */
-
+/* Footer */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 1px;
   bottom: 0;
-    position:fixed;
+  position: fixed;
   left: 0;
   width: 100%;
-  height: auto;
   min-height: 10px; /* Adjust the minimum height as needed */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .footer-content {
   display: flex;
@@ -140,7 +125,7 @@ footer {
   border-radius: 4px; /* Remove the rounded corners */
 }
 
-/* FOOTER TRANSITIONS */
+/* Footer Transitions */
 .social-media-links a {
   display: inline-block;
   margin: 0 5px;
@@ -150,4 +135,48 @@ footer {
 
 .social-media-links a:hover {
   transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+
+  .container {
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  ul {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  nav ul li {
+    margin-right: 5px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Styles for desktop devices */
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  ul:hover {
+    background-color: #ff9933;
+    cursor: pointer;
+  }
 }
