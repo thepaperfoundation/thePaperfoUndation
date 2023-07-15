@@ -1,3 +1,77 @@
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  nav ul li a {
+    padding: 8px 16px;
+  }
+
+  .table-wrapper {
+    flex-direction: column;
+  }
+
+  .bsc-table,
+  .msc-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-media-links a {
+    font-size: 10px;
+  }
+
+  .qr-code img {
+    width: 70px;
+  }
+
+  .qr-code p {
+    font-size: 10px;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 769px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .table-wrapper {
+    justify-content: space-between;
+  }
+
+  .bsc-table,
+  .msc-table {
+    width: 48%;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .qr-code {
+    margin-top: 0;
+  }
+}
+
+
+
+
 /* Autosizing command */
 html, body {
   height: 100%;
@@ -9,43 +83,26 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
-  text-align: center;
+    text-align: center 
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* Styles for the header */
 header {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
   color: #ff6600;
   margin: 0;
   padding: 20px 0;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 1px;
-  font-size: 24px;
-}
-
-ul {
-  display: inline-block;
-  padding: 5px 20px;
-  color: #fff;
-  background-color: #ff6600;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  font-size: 14px;
 }
 
 /* Styles for the navigation bar */
@@ -60,11 +117,26 @@ nav ul li {
   margin-right: 10px;
 }
 
-/* Content */
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #ff6600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff9933;
+}
+
+/* Styles for the content */
 p {
   margin-bottom: 20px;
-  font-size: 16px;
 }
+
+
 
 /* Stock animation styles */
 @keyframes fade-in {
@@ -80,17 +152,84 @@ p {
   animation: fade-in 1s ease-in-out;
 }
 
-/* Footer */
+
+
+
+
+
+
+/*table animation */
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bsc-table,
+.msc-table {
+  border-collapse: collapse;
+}
+
+.bsc-table .table-title,
+.msc-table .table-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bsc-table td,
+.msc-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.bsc-table td a,
+.msc-table td a {
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px;
+}
+
+.bsc-table td a:hover,
+.msc-table td a:hover {
+  background-color: #ff6600;
+  color: #fff;
+  animation: link-animation 0.3s ease;
+}
+
+@keyframes link-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*for the footer */
+
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1px;
+  padding: 20px;
   bottom: 0;
-  position: fixed;
   left: 0;
+  position:fixed;
   width: 100%;
-  min-height: 10px; /* Adjust the minimum height as needed */
+  height: auto;
+  min-height: 30px; /* Adjust the minimum height as needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,58 +264,22 @@ footer {
   border-radius: 4px; /* Remove the rounded corners */
 }
 
-/* Footer Transitions */
-.social-media-links a {
-  display: inline-block;
-  margin: 0 5px;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+.qr-code {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.social-media-links a:hover {
-  transform: scale(1.1);
+.qr-code img {
+  width: 100px; /* Adjust the width of the QR code image */
+  height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  /* Styles for mobile devices */
-
-  .container {
-    padding: 10px 20px;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  ul {
-    font-size: 12px;
-    padding: 3px 10px;
-  }
-
-  nav ul li {
-    margin-right: 5px;
-  }
-
-  p {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 769px) {
-  /* Styles for desktop devices */
-
-  header {
-    margin-bottom: 20px;
-  }
-
-  ul:hover {
-    background-color: #ff9933;
-    cursor: pointer;
-  }
+.qr-code p {
+  color: #fff;
+  font-size: 12px; /* Adjust the font size to your desired small size */
+  margin-top: 5px;
 }
